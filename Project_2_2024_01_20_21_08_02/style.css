@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.fullscreen-bg {
+  position: fixed; /* Use absolute positioning for scrollable content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100; /* Keep the image back */
+}
+
+.fullscreen-bg__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes the image cover the entire area */
+}
